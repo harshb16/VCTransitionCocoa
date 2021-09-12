@@ -11,10 +11,10 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
-
+    let initialVC = InitialViewController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        window.contentViewController = initialVC
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

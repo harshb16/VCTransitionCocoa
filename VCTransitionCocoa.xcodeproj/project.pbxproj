@@ -10,6 +10,11 @@
 		3ABDA85326EE1E8E0075342E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA85226EE1E8E0075342E /* AppDelegate.swift */; };
 		3ABDA85526EE1E940075342E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABDA85426EE1E940075342E /* Assets.xcassets */; };
 		3ABDA85826EE1E940075342E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABDA85626EE1E940075342E /* MainMenu.xib */; };
+		3ABDA86026EE1FC20075342E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA85E26EE1FC20075342E /* InitialViewController.swift */; };
+		3ABDA86126EE1FC20075342E /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABDA85F26EE1FC20075342E /* InitialViewController.xib */; };
+		3ABDA86426EE20EB0075342E /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA86226EE20EB0075342E /* ModalViewController.swift */; };
+		3ABDA86526EE20EB0075342E /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABDA86326EE20EB0075342E /* ModalViewController.xib */; };
+		3ABDA86726EE29930075342E /* ModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA86626EE29930075342E /* ModalAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,11 @@
 		3ABDA85226EE1E8E0075342E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABDA85426EE1E940075342E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ABDA85726EE1E940075342E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3ABDA85E26EE1FC20075342E /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		3ABDA85F26EE1FC20075342E /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		3ABDA86226EE20EB0075342E /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		3ABDA86326EE20EB0075342E /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		3ABDA86626EE29930075342E /* ModalAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,11 @@
 				3ABDA85226EE1E8E0075342E /* AppDelegate.swift */,
 				3ABDA85426EE1E940075342E /* Assets.xcassets */,
 				3ABDA85626EE1E940075342E /* MainMenu.xib */,
+				3ABDA85E26EE1FC20075342E /* InitialViewController.swift */,
+				3ABDA86626EE29930075342E /* ModalAnimator.swift */,
+				3ABDA86226EE20EB0075342E /* ModalViewController.swift */,
+				3ABDA86326EE20EB0075342E /* ModalViewController.xib */,
+				3ABDA85F26EE1FC20075342E /* InitialViewController.xib */,
 			);
 			path = VCTransitionCocoa;
 			sourceTree = "<group>";
@@ -114,8 +129,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABDA86526EE20EB0075342E /* ModalViewController.xib in Resources */,
 				3ABDA85526EE1E940075342E /* Assets.xcassets in Resources */,
 				3ABDA85826EE1E940075342E /* MainMenu.xib in Resources */,
+				3ABDA86126EE1FC20075342E /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ABDA85326EE1E8E0075342E /* AppDelegate.swift in Sources */,
+				3ABDA86426EE20EB0075342E /* ModalViewController.swift in Sources */,
+				3ABDA86726EE29930075342E /* ModalAnimator.swift in Sources */,
+				3ABDA86026EE1FC20075342E /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
