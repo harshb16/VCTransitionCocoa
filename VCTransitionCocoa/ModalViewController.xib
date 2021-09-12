@@ -18,8 +18,8 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PJn-VY-ZRl">
-                    <rect key="frame" x="189" y="119" width="103" height="32"/>
-                    <buttonCell key="cell" type="push" title="Dismiss VC" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GTK-Mc-Qag">
+                    <rect key="frame" x="190" y="116" width="101" height="40"/>
+                    <buttonCell key="cell" type="push" title="Dismiss VC" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GTK-Mc-Qag">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

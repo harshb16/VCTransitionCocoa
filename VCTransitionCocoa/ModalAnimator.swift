@@ -35,7 +35,7 @@ class ModalAnimator: NSObject, NSViewControllerPresentationAnimator {
         
         let modalView = viewController.view
         modalView.translatesAutoresizingMaskIntoConstraints = false
-        centerYConstraint = modalView.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor, constant: 100)
+        centerYConstraint = modalView.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor, constant: -100)
         backgroundView.addSubview(modalView)
         NSLayoutConstraint.activate([
             modalView.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
@@ -44,18 +44,16 @@ class ModalAnimator: NSObject, NSViewControllerPresentationAnimator {
             modalView.heightAnchor.constraint(equalTo: backgroundView.heightAnchor, constant: -100)
         ])
         
-        NSAnimationContext.runAnimationGroup({ context in
-            context.duration = 0.5
+        NSAnimationContext.runAnimationGroup({ _ in
             self.backgroundView.animator().alphaValue = 1
             self.centerYConstraint.animator().constant = 0
         })
     }
     
     func animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
-        NSAnimationContext.runAnimationGroup({ context in
-            context.duration = 0.5
+        NSAnimationContext.runAnimationGroup({ _ in
             self.backgroundView.animator().alphaValue = 0
-            self.centerYConstraint.animator().constant = 100
+            self.centerYConstraint.animator().constant = -100
         }, completionHandler: {
             self.backgroundView.removeFromSuperview()
         })
